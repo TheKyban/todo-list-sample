@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items:center;
+    background-color: #fafafa;
+}
+
+.login {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-family: "Poppins";
+    background-color: rgb(8,145,178);
+    padding: 0 10px;
+    box-shadow: 3px 1px 3px rgb(195, 186, 186);
+    height: 50%;
+    border-radius: 5px;
+}
+.login .left {
+    background-color: rgb(8,145,178);
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.login .left img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.login .right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login .right h1  {
+    font-size: 2.5rem;
+}
+.login .right label {
+    display: block;
+    font-size: 1.3rem;
+}
+
+.login .right .input {
+    width: 100%;
+}
+.login .right input {
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 2px solid rgb(228, 219, 219);
+    outline: none;
+    margin-top: 3px;
+    border-radius: 3px;
+    width: 100%;
+    min-width: 300px;
+}
+.login .right input[type=submit]{
+    width: 100%;
+    background-color: rgb(206, 126, 224);
+    color: rgb(247, 246, 246);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.login .right .have {
+    width: 100%;
+    justify-self: start;
+}
+
+.login .right .have a {
+    text-align:left;
+    text-decoration: none;
+    color:rgb(76, 36, 156);
+}
+
+
+
+/* rgb(8 145 178) */

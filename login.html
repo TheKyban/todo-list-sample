@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
+
 <body>
-    
+    <nav id="navbar">
+        <img src="assets/writeonlogo.png" alt="">
+        <h2>Creative</h2>
+    </nav>
+
+    <div class="login">
+        <section class="left">
+            <img src="assets/loginbanner.png" alt="">
+        </section>
+        <section class="right">
+            <h1>Login</h1>
+            <div class="input">
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input">
+                <label for="password">Password*</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="have">
+                <span>Don't have an Account</span>
+                <a href="#">SIGNUP</a>
+            </div>
+
+            <input type="submit" value="Login">
+        </section>
+    </div>
 </body>
+
 </html>
