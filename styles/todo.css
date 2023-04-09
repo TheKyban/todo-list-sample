@@ -14,7 +14,7 @@ body {
 
 .page {
     margin-top:70px;
-    padding: 10px;
+    padding: 30px 20px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -38,6 +38,7 @@ body {
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
     gap:20px;
+    place-items: center;
 }
 .item {
     border-top: 2px solid rgb(142, 142, 236);
