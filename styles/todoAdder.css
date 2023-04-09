@@ -1,0 +1,48 @@
+.adder {
+    display: none;    
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(166, 162, 162, 0.384);
+    position: relative;
+    z-index: 5;
+    transition: all 0.3s;
+}
+
+.form {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow:0px 0px 3px 3px rgb(255, 198, 198);
+    border-radius: 5px;
+    gap:10px;
+    background-color: rgb(243, 243, 243);
+}
+.form input , .form textarea{
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    padding: 5px;
+    border: 2px solid rgb(210, 184, 184);
+    outline: none;
+}
+.form textarea {
+    height: 50px;
+}
+
+.form button {
+    width:50%;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius:5px;
+    border:none;
+    background-color:rgb(178, 178, 231);
+    color:rgb(53, 36, 36);
+    outline:none;
+}

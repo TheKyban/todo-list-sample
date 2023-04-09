@@ -12,7 +12,7 @@
     letter-spacing: 2px;
     color: rgb(38, 37, 37);
     box-shadow: 0 0 3px rgba(137, 137, 35, 0.318);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: #fff;
