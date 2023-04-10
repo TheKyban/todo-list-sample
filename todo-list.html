@@ -31,13 +31,12 @@
             <button class="ask">+</button>
         </div>
         <div class="items">
+
             <!-- <div class="item">
                 <h2>Study</h2>
                 <p>make todo this is list</p>
                 <button class="btn">-</button>
             </div> -->
-            
-
 
         </div>
     </div>
@@ -51,7 +50,6 @@
     const description = document.getElementById('des')
     const addButton = document.getElementById('add')
     const page = document.querySelector(".items")
-
     const deleteList = document.querySelectorAll(".btn")
 
 
@@ -66,7 +64,7 @@
 
         if (task_value.length > 0 && description_value.length > 0) {
 
-           // ***************************************************//
+            // ***************************************************//
 
             const div = document.createElement('div') // div
             div.setAttribute("class", "item") // div class
@@ -101,12 +99,10 @@
             description.value = ""
 
 
-            // deleteList.forEach((item, index) => {
 
-                btn.onclick = () => {
-                    document.querySelector(".items").removeChild(btn.parentElement)
-                }
-            // })
+            btn.onclick = () => { // adding listener to delete the item
+                document.querySelector(".items").removeChild(btn.parentElement)
+            }
         }
 
     }
@@ -119,8 +115,7 @@
     }
 
 
-
-
+    
 
 </script>
 
