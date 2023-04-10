@@ -25,7 +25,7 @@ const uploadingDataToPage = async (datafunction) => {
     <div class="item" id=${i._id}>
                 <h2>${i.name}</h2>
                 <p>${i.desc}</p>
-                <button class="btn">-</button>
+                <button class="btn">✓</button>
             </div>
     `;
         page.innerHTML = todo
@@ -56,8 +56,8 @@ const deleteListenerToButton = (button) => {
             })
         }
 
-        const checkDeleted = await fetch(url, obj)
         document.querySelector(".items").removeChild(parent)
+        const checkDeleted = await fetch(url, obj)
     }
 }
 (async () => {
@@ -73,7 +73,7 @@ const todoAdder = async () => {
 
     if (task_value.length > 0 && description_value.length > 0) {
 
-        
+
         // ***************************************************//
 
         const div = document.createElement('div') // div
@@ -89,7 +89,7 @@ const todoAdder = async () => {
         p.appendChild(description_text) // appending text in p
 
         const btn = document.createElement('button') //button
-        const btn_text = document.createTextNode("-") //button text -
+        const btn_text = document.createTextNode("✓") //button text -
         btn.setAttribute("class", "btn") // set class to the button
         btn.appendChild(btn_text) // appending text to button
 
@@ -104,7 +104,13 @@ const todoAdder = async () => {
         let date = new Date()
         let time = date.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit' })
         let month = date.toLocaleDateString('en-us', { month: "long", day: '2-digit' })
+        
+        page.appendChild(div) // appending the div contains todo in page
+        addTodo.style.display = "none"
+        task.value = ""
+        description.value = ""
 
+        
         const obj = {
             method: "POST",
             headers: {
@@ -122,10 +128,6 @@ const todoAdder = async () => {
         }
         const posted = await fetch(url, obj)
 
-        page.appendChild(div) // appending the div contains todo in page
-        addTodo.style.display = "none"
-        task.value = ""
-        description.value = ""
 
 
         const addingIdToTheTodo = async () => {

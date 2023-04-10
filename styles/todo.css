@@ -50,13 +50,15 @@ body {
     box-shadow: 3px 3px 3px rgb(238, 216, 216);
     word-wrap: break-word;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content 1fr;
     gap:20px 10px;
 }
 .item h2 {
     font-size: 1.6rem;
     color: rgb(99, 76, 160);
+    word-wrap: break-word;
+    word-break: break-all;
 } 
 .item p {
     font-size:1.1rem;
@@ -65,12 +67,12 @@ body {
     grid-column: 1/-1;
 }
 .item .btn{
-    width:55px;
-    height: 55px;
+    width:40px;
+    height: 40px;
     border: none;
     outline: none;
     background-color:rgb(142, 142, 236);
-    font-size: 3rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     color:rgb(247, 217, 217);
 }
